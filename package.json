@@ -1,0 +1,33 @@
+{
+  "name": "react-native-bottomsheet",
+  "version": "1.0.0",
+  "description": "True Cross-platform ActionSheet for Android and iOS",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint *.js",
+    "test": "npm run lint"
+  },
+  "keywords": [
+    "bottomsheet",
+    "android",
+    "ios"
+  ],
+  "author": "Clip-sub",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https@github.com:Clip-sub/react-native-bottomsheet.git"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.1",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3"
+  },
+  "peerDependencies": {
+    "react": ">=14.5.0",
+    "react-native": ">=0.29.0"
+  }
+}
