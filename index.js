@@ -1,3 +1,4 @@
-import { NativeModules, Platform, ActionSheetIOS } from 'react-native';
+import { NativeModules, Platform } from 'react-native';
+import BottomSheetIOS from "./module.ios";
 
-export default Platform.OS === 'ios' ? ActionSheetIOS : NativeModules.RNBottomSheet;
+export default Platform.OS === 'ios' ? BottomSheetIOS : NativeModules.RNBottomSheet;
