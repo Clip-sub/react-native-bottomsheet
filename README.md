@@ -36,7 +36,7 @@ react-native link react-native-bottomsheet
 
 ### Import the package
 ```
-import BottomSheet from 'react-native-bottom-sheet';
+import BottomSheet from 'react-native-bottomsheet';
 ```
 
 ### Use it like how you do with ActionSheet.
