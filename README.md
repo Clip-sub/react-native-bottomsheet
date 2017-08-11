@@ -1,11 +1,11 @@
 # react-native-bottomsheet
 
-RNBottomSheet is a cross-platform ActionSheet for both Android and iOS. It uses original ActionSheet on iOS and [soarcn BottomSheet](https://github.com/soarcn/BottomSheet) on Android with some minor fixes, such as title and list item margins.
+`react-native-bottomsheet` is a cross-platform ActionSheet for both Android and iOS. It uses original ActionSheet on iOS and [soarcn BottomSheet](https://github.com/soarcn/BottomSheet) on Android with some minor fixes, such as title and list item margins.
 
 Note: On Android, `message` property is not available. Instead, there's an `dark` option to turn on Dark Mode like so:
 
 ```
-RNBottomSheet.showBottomSheetWithOptions({
+BottomSheet.showBottomSheetWithOptions({
   options: ['Option 1', 'Option 2', 'Option 3'],
   title: 'Demo Bottom Sheet',
   dark: true,
@@ -28,9 +28,9 @@ react-native link react-native-bottomsheet
 
 ## Demo
 
-![Android](https://s17.postimg.org/pjlqnhgz3/android.png "Android")
+![Android](https://camo.githubusercontent.com/77908b5b2a67447d4337ab47a8a9626af0be12d0/68747470733a2f2f7331372e706f7374696d672e6f72672f706a6c716e68677a332f616e64726f69642e706e67 "Android")
 
-![iOS](https://s17.postimg.org/cthiae90v/ios.png "iOS")
+![iOS](https://camo.githubusercontent.com/bb1ff00dc37a2b57452148d21fa18eafcd9222f8/68747470733a2f2f7331372e706f7374696d672e6f72672f6374686961653930762f696f732e706e67 "iOS")
 
 ## Usage
 
@@ -48,7 +48,7 @@ BottomSheet.showShareBottomSheetWithOptions(options: Object, failureCallback: Fu
 Example:
 
 ```
-import BottomSheet from 'react-native-bottom-sheet';
+import BottomSheet from 'react-native-bottomsheet';
 ...
 BottomSheet.showBottomSheetWithOptions({
   options: ['Option 1', 'Option 2', 'Option 3'],
