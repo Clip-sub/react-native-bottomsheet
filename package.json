@@ -1,6 +1,6 @@
 {
   "name": "react-native-bottomsheet",
-  "version": "1.5.0",
+  "version": "1.6.1",
   "description": "True Cross-platform ActionSheet for Android and iOS",
   "main": "index.js",
   "scripts": {
