@@ -23,6 +23,7 @@ import java.util.List;
 
 public class RNBottomSheet extends ReactContextBaseJavaModule {
 
+    private static boolean isOpened = false;
     private Callback shareSuccessCallback;
     private Callback shareFailureCallback;
 
@@ -37,6 +38,10 @@ public class RNBottomSheet extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void showBottomSheetWithOptions(ReadableMap options, final Callback onSelect) {
+        if (RNBottomSheet.isOpened) return;
+
+        RNBottomSheet.isOpened = true;
+
         ReadableArray optionArray = options.getArray("options");
         final Integer cancelButtonIndex = options.getInt("cancelButtonIndex");
         String title;
@@ -75,6 +80,13 @@ public class RNBottomSheet extends ReactContextBaseJavaModule {
                 } else {
                     onSelect.invoke(which);
                 }
+            }
+        });
+
+        builder.setOnDismissListener(new DialogInterface.OnDismissListener() {
+            @Override
+            public void onDismiss(DialogInterface dialog) {
+                RNBottomSheet.isOpened = false;
             }
         });
 
