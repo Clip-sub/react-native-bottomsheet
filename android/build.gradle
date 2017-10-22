@@ -1,23 +1,14 @@
 apply plugin: "com.android.library"
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
 
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
-    }
-}
-
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
     }
 }
 
@@ -35,6 +26,6 @@ allprojects {
 
 dependencies {
     compile "com.facebook.react:react-native:+"
-    compile "com.android.support:appcompat-v7:24.1.1"
+    compile "com.android.support:appcompat-v7:26.+"
     compile 'com.cocosw:bottomsheet:1.+@aar'
 }
