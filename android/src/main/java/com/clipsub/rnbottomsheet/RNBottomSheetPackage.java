@@ -26,7 +26,7 @@ public class RNBottomSheetPackage implements ReactPackage {
     }
 
     public List<Class<? extends JavaScriptModule>> createJSModules() {
-        return null;
+        return Collections.emptyList();
     }
 
     @Override
