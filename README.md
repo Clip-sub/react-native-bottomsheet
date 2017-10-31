@@ -2,7 +2,7 @@
 
 `react-native-bottomsheet` is a cross-platform ActionSheet for both Android and iOS. It uses original ActionSheet on iOS and [soarcn BottomSheet](https://github.com/soarcn/BottomSheet) on Android with some minor fixes, such as title and list item margins.
 
-Note: On Android, `message` property is not available. Instead, there's an `dark` option to turn on Dark Mode like so:
+Note: On Android, `message` property is not available. Instead, there's a `dark` option to turn on Dark Mode like so:
 
 ```
 BottomSheet.showBottomSheetWithOptions({
