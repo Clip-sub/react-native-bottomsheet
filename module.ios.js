@@ -1,4 +1,3 @@
-"use strict";
 import { ActionSheetIOS } from 'react-native';
 
 const BottomSheetIOS = {
