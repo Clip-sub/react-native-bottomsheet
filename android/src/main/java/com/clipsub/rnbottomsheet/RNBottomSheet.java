@@ -76,9 +76,7 @@ public class RNBottomSheet extends ReactContextBaseJavaModule {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
-                if (which != cancelButtonIndex) {
-                    onSelect.invoke(which);
-                }
+                onSelect.invoke(which);
             }
         });
 
@@ -86,7 +84,6 @@ public class RNBottomSheet extends ReactContextBaseJavaModule {
             @Override
             public void onDismiss(DialogInterface dialog) {
                 RNBottomSheet.this.isOpened = false;
-                onSelect.invoke(cancelButtonIndex);
             }
         });
 
