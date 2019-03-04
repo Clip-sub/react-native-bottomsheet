@@ -25,6 +25,6 @@ allprojects {
 }
 
 dependencies {
-    compile "com.facebook.react:react-native:+"
-    compile 'com.cocosw:bottomsheet:1.+@aar'
+    implementation "com.facebook.react:react-native:+"
+    implementation 'com.cocosw:bottomsheet:1.+@aar'
 }
