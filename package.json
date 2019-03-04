@@ -1,6 +1,6 @@
 {
   "name": "react-native-bottomsheet",
-  "version": "1.9.3",
+  "version": "1.9.5",
   "description": "True Cross-platform ActionSheet for Android and iOS",
   "main": "index.js",
   "keywords": [
@@ -15,7 +15,7 @@
     "url": "git+https@github.com:Clip-sub/react-native-bottomsheet.git"
   },
   "peerDependencies": {
-    "react": "^15.0.0",
-    "react-native": "^0.47.1"
+    "react": "^16.3.0",
+    "react-native": "^0.57.0"
   }
 }
