@@ -28,6 +28,20 @@ Then link the native module, since we are using native bottom sheet on Android:
 react-native link react-native-bottomsheet
 ```
 
+Or you can link it manually in `MainApplication.java`
+
+```java
+import com.clipsub.rnbottomsheet.RNBottomSheetPackage; // Import this
+
+....
+@Override
+protected List<ReactPackage> getPackages() {
+  return Arrays.<ReactPackage>asList(
+       new RNBottomSheetPackage() // Add this 
+  );
+}
+```
+
 ## Usage
 
 ### Import the package
