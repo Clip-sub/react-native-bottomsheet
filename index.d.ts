@@ -1,6 +1,6 @@
 export interface showBottomSheetWithOptionsDTO {
-  options?: string[]
-  title?: string
+  options: string[]
+  title: string
   dark?: boolean
   cancelButtonIndex?: number
 }
