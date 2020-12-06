@@ -15,7 +15,7 @@
     "url": "git+https@github.com:Clip-sub/react-native-bottomsheet.git"
   },
   "peerDependencies": {
-    "react": "^17.0.1",
-    "react-native": "^0.63.4"
+    "react": "^16.0.1",
+    "react-native": "^0.60.1"
   }
 }
