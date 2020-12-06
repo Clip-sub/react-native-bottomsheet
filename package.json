@@ -2,7 +2,9 @@
   "name": "react-native-bottomsheet",
   "version": "2.2.0",
   "description": "True Cross-platform ActionSheet for Android and iOS",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/pager.esm.js",
+  "typings": "dist/index.d.ts",
   "keywords": [
     "react",
     "react-native",
@@ -16,17 +18,26 @@
     "type": "git",
     "url": "git+https@github.com:Clip-sub/react-native-bottomsheet.git"
   },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "rm -rf dist && tsdx build",
+    "test": "tsdx test --env=jsdom",
+    "lint": "tsdx lint",
+    "deploy": "yarn build && npm publish",
+    "clean": "rm -rf dist .rts2_*"
+  },
   "devDependencies": {
-    "@types/react": "^16.9.2",
-    "@types/react-dom": "^16.9.0",
-    "@types/react-native": "^0.60.11",
-    "babel-plugin-module-resolver": "^3.2.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-native": "^0.63.37",
+    "metro-react-native-babel-preset": "^0.64.0",
+    "babel-plugin-module-resolver": "^4.0.0",
     "tsdx": "^0.9.1",
-    "tslib": "^1.10.0",
-    "typescript": "^3.6.2"
+    "tslib": "^2.0.3",
+    "typescript": "^4.1.2"
   },
   "peerDependencies": {
     "react": ">=16",
-    "react-native": "^0.60.5"
+    "react-native": "^0.60.0"
   }
 }

@@ -39,3 +39,11 @@ buck-out/
 \.buckd/
 android/app/libs
 android/keystores/debug.keystore
+
+.cache
+.rts2_cache_cjs
+.rts2_cache_esm
+.rts2_cache_umd
+dist
+yarn.lock
+package-lock.json
