@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BottomSheet.ListItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:ignore="UseCompoundDrawables">
+
+    <ImageView
+        android:id="@id/bs_list_image"
+        style="@style/BottomSheet.ListItemImage"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@id/bs_list_title"
+        style="@style/BottomSheet.ListItemTitle" />
+</LinearLayout>

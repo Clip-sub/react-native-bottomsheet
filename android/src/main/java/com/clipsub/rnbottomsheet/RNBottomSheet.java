@@ -1,14 +1,10 @@
 package com.clipsub.rnbottomsheet;
 
-import android.app.Activity;
-import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
-import android.telecom.Call;
 
 import com.cocosw.bottomsheet.BottomSheet;
-import com.facebook.react.bridge.ActivityEventListener;
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -16,18 +12,13 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 
-import org.json.JSONObject;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class RNBottomSheet extends ReactContextBaseJavaModule {
-
     private boolean isOpened;
-    private Callback shareSuccessCallback;
-    private Callback shareFailureCallback;
 
-    public RNBottomSheet(ReactApplicationContext reactContext) {
+  public RNBottomSheet(ReactApplicationContext reactContext) {
         super(reactContext);
     }
 
@@ -45,7 +36,7 @@ public class RNBottomSheet extends ReactContextBaseJavaModule {
         ReadableArray optionArray = options.getArray("options");
         final Integer cancelButtonIndex = options.getInt("cancelButtonIndex");
         String title;
-        boolean dark = false;
+        boolean dark;
         BottomSheet.Builder builder;
 
         // Title.
@@ -67,7 +58,7 @@ public class RNBottomSheet extends ReactContextBaseJavaModule {
         }
 
         // Options.
-        Integer size = optionArray.size();
+        int size = optionArray.size();
         for (int i = 0; i < size; i++) {
             builder.sheet(i, optionArray.getString(i));
         }
@@ -95,6 +86,10 @@ public class RNBottomSheet extends ReactContextBaseJavaModule {
         String url = options.getString("url");
         String message = options.getString("message");
         String subject = options.getString("subject");
+        String title = options.getString("subject");
+        if (title == null) {
+          title = "";
+        }
 
         List<String> items = new ArrayList<>();
         if (message != null && !message.isEmpty()) {
@@ -116,14 +111,10 @@ public class RNBottomSheet extends ReactContextBaseJavaModule {
             }
         }
 
-        this.shareSuccessCallback = successCallback;
-        this.shareFailureCallback = failureCallback;
-
-        if (shareIntent.resolveActivity(this.getCurrentActivity().getPackageManager()) != null) {
-            this.getCurrentActivity().startActivity(Intent.createChooser(shareIntent, "Share To"));
+      if (shareIntent.resolveActivity(this.getCurrentActivity().getPackageManager()) != null) {
+            this.getCurrentActivity().startActivity(Intent.createChooser(shareIntent, title));
         } else {
             failureCallback.invoke(new Exception("The app you want to share is not installed."));
         }
     }
-
 }
