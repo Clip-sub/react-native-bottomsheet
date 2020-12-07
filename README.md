@@ -4,6 +4,8 @@
 
 *Update*: The library now uses a copy of original lib (source copied) so you can modify it whenever you need to.
 
+![bottomsheet](https://raw.githubusercontent.com/acaziasoftcom/react-native-bottomsheet/master/image-demo.png)
+
 Note: On Android, `message` property is not available. Instead, there's a `dark` option to turn on Dark Mode like so:
 
 ```js
