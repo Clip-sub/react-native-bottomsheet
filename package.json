@@ -1,6 +1,6 @@
 {
   "name": "react-native-bottomsheet",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "True Cross-platform ActionSheet for Android and iOS",
   "main": "dist/index.js",
   "module": "dist/pager.esm.js",
@@ -19,22 +19,11 @@
     "url": "git+https@github.com:Clip-sub/react-native-bottomsheet.git"
   },
   "scripts": {
-    "start": "tsdx watch",
-    "build": "rm -rf dist && tsdx build",
-    "test": "tsdx test --env=jsdom",
-    "lint": "tsdx lint",
     "deploy": "yarn build && npm publish",
     "clean": "rm -rf dist .rts2_*"
   },
   "devDependencies": {
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "@types/react-native": "^0.63.37",
-    "metro-react-native-babel-preset": "^0.64.0",
-    "babel-plugin-module-resolver": "^4.0.0",
-    "tsdx": "^0.9.1",
-    "tslib": "^2.0.3",
-    "typescript": "^4.1.2"
+    "metro-react-native-babel-preset": "^0.64.0"
   },
   "peerDependencies": {
     "react": ">=16",
