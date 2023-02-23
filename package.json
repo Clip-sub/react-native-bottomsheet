@@ -1,6 +1,6 @@
 {
   "name": "react-native-bottomsheet",
-  "version": "2.5.2",
+  "version": "2.6.2",
   "description": "True Cross-platform ActionSheet for Android and iOS",
   "main": "index.js",
   "typings": "index.d.ts",
@@ -22,10 +22,10 @@
     "clean": "rm -rf dist .rts2_*"
   },
   "devDependencies": {
-    "metro-react-native-babel-preset": "^0.64.0"
+    "metro-react-native-babel-preset": "^0.71.0"
   },
   "peerDependencies": {
     "react": ">=16",
-    "react-native": "^0.64.0"
+    "react-native": "^0.71.0"
   }
 }
