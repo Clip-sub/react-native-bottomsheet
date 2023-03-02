@@ -23,7 +23,7 @@ BottomSheet.showBottomSheetWithOptions({
 
 First, install the npm package:
 ```bash
-npm install --save react-native-bottomsheet
+npm install --save @clip-sub/react-native-bottomsheet
 ```
 Then:
 

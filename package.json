@@ -1,6 +1,6 @@
 {
-  "name": "react-native-bottomsheet",
-  "version": "2.8.0",
+  "name": "@clip-sub/react-native-bottomsheet",
+  "version": "2.9.0",
   "description": "True Cross-platform ActionSheet for Android and iOS",
   "main": "index.js",
   "typings": "index.d.ts",
@@ -11,7 +11,7 @@
     "android",
     "ios"
   ],
-  "author": "Clip-sub",
+  "author": "clip-sub",
   "license": "MIT",
   "repository": {
     "type": "git",
